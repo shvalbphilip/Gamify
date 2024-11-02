@@ -1,0 +1,31 @@
+/* index.css */
+
+/* Import fonts at the very top */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Mode Background */
+body {
+    font-family: 'New Amsterdam', serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    @apply bg-background text-secondary;
+}
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dark Mode Background */
+.dark body {
+    @apply bg-dark-gradient text-dark-accent;
+}
+
+/* Custom Glowing Effect */
+.shadow-glow {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+}
